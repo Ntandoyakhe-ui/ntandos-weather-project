@@ -3,38 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather Project</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:49 scattered clouds
-          <br />
-          Humidity : 66% , Humidity : 3,3km/h
-        </p>
-      </div>
-      <div>🌥️12°C</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/Ntandoyakhe-ui" target="blank"
-        >Ntandoyakhe Moyo </a
-      >,the code is hosted on
-      <a
-        href="https://github.com/Ntandoyakhe-ui/ntandos-weather-project"
-        target="blank"
-        >Github</a
-      >
-      and the wesbite is hosted on
-      <a href="https://ntandos-app.netlify.app/" target="blank">Netlify</a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49 scattered clouds
+              <br />
+              Humidity : <strong>66%</strong>, Humidity :
+              <strong>3,3km/h </strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="app-icon">🌥️</div>
+            <div class="app-temperature">12</div>
+            <div class="app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/Ntandoyakhe-ui" target="blank"
+          >Ntandoyakhe Moyo </a
+        >,the code is open-sourced on
+        <a
+          href="https://github.com/Ntandoyakhe-ui/ntandos-weather-project"
+          target="blank"
+          >Github</a
+        >
+        and the wesbite is hosted on
+        <a href="https://ntandos-app.netlify.app/" target="blank">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
